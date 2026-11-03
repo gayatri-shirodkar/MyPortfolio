@@ -17,16 +17,20 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // Skill descriptions
 const skillDescriptions = {
-    'Java': 'Java is a versatile, object-oriented programming language that I use extensively for building robust backend applications. I have strong knowledge of core Java concepts including OOP principles, multithreading, collections, and exception handling. Java is the foundation of my full-stack development expertise.',
-    'Spring Boot': 'Spring Boot is a modern framework I\'m currently learning for building enterprise-level applications. It simplifies Spring configuration and enables rapid development of microservices. I\'m gaining hands-on experience with dependency injection, MVC patterns, and RESTful APIs.',
-    'Hibernate': 'Hibernate is an ORM (Object-Relational Mapping) framework that I have intermediate knowledge of. It helps map Java objects to database tables, reducing boilerplate code and providing a cleaner approach to database operations. I use it for efficient data persistence and manipulation.',
-    'SQL': 'SQL is essential for database management and querying. I have solid knowledge of writing optimized queries, understanding database design principles, joins, indexing, and transactions. SQL enables me to design efficient databases and retrieve data effectively.',
-    'HTML CSS JS': 'HTML, CSS, and JavaScript form the core of frontend development. I use HTML for structure, CSS for responsive styling and animations, and JavaScript for interactive user experiences. I focus on creating clean, semantic HTML and maintainable CSS with modern JavaScript ES6+ features.',
-    'JSP Servlets': 'JSP (JavaServer Pages) and Servlets are technologies I use for building dynamic web applications. Servlets handle server-side logic and request processing, while JSP allows embedding Java code in HTML templates. Together, they form the traditional Java web development approach.',
-    'JDBC': 'JDBC (Java Database Connectivity) is the Java API for database connectivity. I use JDBC to establish connections, execute queries, and manipulate data in relational databases. It\'s fundamental for building database-driven applications in Java.',
-    'MySQL': 'MySQL is a popular relational database management system that I use for storing and managing application data. I have experience in database design, creating tables, relationships, indexes, and writing efficient queries to optimize performance.',
-    'Python': 'Python is a versatile language I\'ve learned for various applications, particularly for data processing and automation. I\'ve used Python for developing the face recognition attendance system with OpenCV, leveraging its simplicity and powerful libraries.',
-    'OpenCV': 'OpenCV is a computer vision library I used in my attendance system project. It enables image processing, face detection, and facial recognition. I leveraged OpenCV to build an automated attendance system that detects faces and triggers SMS notifications.'
+    'Java': 'Java is the core of my backend development work. I use it to build reliable, object-oriented applications with strong knowledge of core concepts like OOP, collections, exception handling, and multithreading.',
+    'JavaScript': 'JavaScript helps me add interactivity and dynamic behavior to web applications. I use it for frontend logic, DOM manipulation, and making user interfaces more responsive and engaging.',
+    'SQL': 'SQL is essential for database management and querying. I have practical knowledge of writing efficient queries, joins, filtering, and working with relational data models.',
+    'HTML5 CSS3': 'HTML5 and CSS3 are the foundation of my web development work. I use them to build responsive layouts, modern interfaces, and clean, structured user experiences.',
+    'JSP Servlets': 'JSP and Servlets are key Java web technologies I use for server-side processing and dynamic page rendering. They help build database-driven web applications with clear request-handling logic.',
+    'JDBC': 'JDBC allows Java applications to connect to relational databases and execute SQL commands. It is a core skill for creating data-driven applications and handling database operations efficiently.',
+    'Hibernate': 'Hibernate is an ORM framework that simplifies database access by mapping Java objects to database tables. It helps reduce repetitive code and makes persistence easier in Java projects.',
+    'Spring Core': 'Spring Core gives me a strong understanding of dependency injection and inversion of control. It is the foundation for building modular and maintainable Java applications.',
+    'Spring MVC': 'Spring MVC is a framework I use for structuring web applications in a layered and organized way. It supports clean controller-service-DAO architecture and efficient web request handling.',
+    'MySQL': 'MySQL is a relational database system I use for storing and managing application data. I have hands-on practice in database design, table relationships, and query optimization.',
+    'PostgreSQL': 'PostgreSQL is a robust open-source database system that I am learning for data-intensive applications. It strengthens my knowledge of relational databases and advanced SQL handling.',
+    'React.js': 'React.js is a frontend library I am learning to build reusable, component-based interfaces. It helps create interactive, modern web applications with cleaner UI architecture.',
+    'Git GitHub': 'Git and GitHub are important tools for version control and team collaboration. I use them to manage code, track changes, and maintain organized project workflows.',
+    'Python': 'Python is a versatile language I use for automation, data processing, and practical project work. I have used it in computer vision and file-processing based applications as well.'
 };
 
 // Show skill description
@@ -58,12 +62,11 @@ window.onclick = function(event) {
 
 // Download resume function
 function downloadResume() {
-    // Replace 'resume/Gayatri_Shirodkar_Resume.pdf' with your actual resume file path
-    const resumeUrl = 'Gayatri_Shirodkar_Resume.pdf';
+    const resumeUrl = 'resume_gayu (15).pdf';
     
     const element = document.createElement('a');
     element.href = resumeUrl;
-    element.download = 'Gayatri_Shirodkar_Resume.pdf';
+    element.download = 'resume_gayu(15).pdf';
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
